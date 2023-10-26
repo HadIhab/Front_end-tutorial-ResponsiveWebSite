@@ -44,6 +44,9 @@ nav .nav-item .nav-link {
 nav .nav-link:hover {
     color: #6e0aef;
 }
+nav .bars-menu {
+    display: none;
+}
 .hero {
     background-color: #f8f7fc;
 }
@@ -203,4 +206,113 @@ section.features .features-section {
     width: 15rem;
     margin-bottom: 1rem;
     align-self: center;
+}
+footer {
+    background-color: #f8f7fc;
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+.footer-section {
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1366px;
+}
+.footer-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section .social-medias {
+    margin-bottom: 1rem;
+}
+.footer-section .social-medias i {
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+}
+.footer-section .social-medias i:hover {
+    color: #6e0aef;
+    cursor: pointer;
+}
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1300px) {
+    * {
+        font-size: 85%;
+    }
+}
+@media (max-width: 1175px) {
+    * {
+        font-size: 80%;
+    }
+}
+@media (max-width:  1000px) {
+    * {
+        text-align: center;
+    }
+    .hero-section img {
+        display: none;
+    }
+    .hero-section {
+        align-items: center;
+        padding: 2rem 0rem;
+        width: 50%;
+    }
+    .hero-section .btn {
+        align-self: center;
+    }
+    .hero .content {
+        margin-top: 2rem;
+    }
+    .features-section .qualities {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.features .features-section {
+        align-items: center;
+    }
+    .phones-section h4 {
+        align-self: center;
+    }
+}
+@media (max-width: 660px) {
+    .hero-section .content h1 {
+        font-size: 2rem;
+    }
+    .phones-section {
+        align-items: center;
+    }
+    .phones-section .phones {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 504px) {
+    .phones-section .phones {
+        grid-template-columns: 1fr;
+    }
+    nav .bars-menu {
+        display: block;
+        font-size: 3rem;
+    }
+    nav .nav-items {
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #7d22f3;
+        padding: 2rem 0;
+    }
+    nav .nav-items .nav-item {
+        margin: 1rem 0;
+    }
+    nav .nav-items .nav-item a {
+        color: white;
+    }
+    nav .nav-items.active {
+        display: flex;
+    }
 }
